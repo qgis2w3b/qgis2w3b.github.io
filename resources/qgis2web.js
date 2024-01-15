@@ -88,20 +88,7 @@ var map = new ol.Map({
 var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
 map.addControl(layerSwitcher);
 
-    var searchLayer = new SearchLayer({
-      layer: lyr_NumeracinCoord4326_3,
-      colName: 'plaintext',
-      zoom: 10,
-      collapsed: true,
-      map: map
-    });
-
-    map.addControl(searchLayer);
-    document.getElementsByClassName('search-layer')[0]
-    .getElementsByTagName('button')[0].className +=
-    ' fa fa-binoculars';
-    
-map.getView().fit([-6661610.747029, -4056400.884559, -6648454.096924, -4046513.667641], map.getSize());
+map.getView().fit([-6659362.130939, -4054822.361347, -6652783.805886, -4049878.752889], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
