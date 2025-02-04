@@ -10,42 +10,36 @@
         <link rel="stylesheet" href="resources/fontawesome-all.min.css">
         <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
         <link rel="stylesheet" href="./resources/qgis2web.css">
-<style>
-.search-layer {
-  top: 65px;
-  left: .5em;
-}
-.ol-touch .search-layer {
-  top: 80px;
-}
-</style>
         <style>
         html, body {
             background-color: #ffffff;
         }
-        .ol-control button {
-            background-color: #f8f8f8 !important;
-            color: #000000 !important;
-            border-radius: 0px !important;
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
         }
-        .ol-zoom, .geolocate, .gcd-gl-control .ol-control {
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
             background-color: rgba(255,255,255,.4) !important;
-            padding: 3px !important;
-        }
-        .ol-scale-line {
-            background: none !important;
-        }
-        .ol-scale-line-inner {
-            border: 2px solid #f8f8f8 !important;
-            border-top: none !important;
-            background: rgba(255, 255, 255, 0.5) !important;
-            color: black !important;
-        }
+            padding: 2px !important;
+        } 
         </style>
+
         <style>
-        #map {
-            width: 1049px;
-            height: 876px;
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
         }
         </style>
         <title></title>
@@ -58,12 +52,11 @@
             </div>
         </div>
         <script src="resources/qgis2web_expressions.js"></script>
-        <script src="resources/polyfills.js"></script>
         <script src="./resources/functions.js"></script>
         <script src="./resources/ol.js"></script>
         <script src="./resources/ol-layerswitcher.js"></script>
-        <script src="layers/Calles_1.js"></script><script src="layers/CapitanSarmientoCatastroIdeba_2.js"></script><script src="layers/FOTrianguloSur_3.js"></script><script src="layers/NAPsTrianguloSur_4.js"></script>
-        <script src="styles/Calles_1_style.js"></script><script src="styles/CapitanSarmientoCatastroIdeba_2_style.js"></script><script src="styles/FOTrianguloSur_3_style.js"></script><script src="styles/NAPsTrianguloSur_4_style.js"></script>
+        <script src="layers/FO_Varela_1.js"></script><script src="layers/BotellasNaps_Varela_2.js"></script><script src="layers/FO_Brown_3.js"></script><script src="layers/BotellasNaps_Brown_4.js"></script>
+        <script src="styles/FO_Varela_1_style.js"></script><script src="styles/BotellasNaps_Varela_2_style.js"></script><script src="styles/FO_Brown_3_style.js"></script><script src="styles/BotellasNaps_Brown_4_style.js"></script>
         <script src="./layers/layers.js" type="text/javascript"></script> 
         <script src="./resources/Autolinker.min.js"></script>
         <script src="./resources/qgis2web.js"></script>
