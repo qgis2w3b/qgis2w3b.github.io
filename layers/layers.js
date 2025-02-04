@@ -106,9 +106,9 @@ lyr_BotellasNaps_Varela_2.set('fieldImages', {'Tipo': 'TextEdit', 'Nomencla': 'T
 lyr_FO_Brown_3.set('fieldImages', {'Tipo': 'TextEdit', 'Nombre': 'TextEdit', 'Estado': 'TextEdit', 'Info': 'TextEdit', });
 lyr_BotellasNaps_Brown_4.set('fieldImages', {'Tipo': 'TextEdit', 'Estado': 'TextEdit', 'Nomencla': 'TextEdit', 'Info': 'TextEdit', 'Clasificac': 'TextEdit', });
 lyr_FO_Varela_1.set('fieldLabels', {'Estado': 'no label', 'Nombre': 'inline label - visible with data', 'Info': 'no label', 'Tipo': 'no label', });
-lyr_BotellasNaps_Varela_2.set('fieldLabels', {'Tipo': 'no label', 'Nomencla': 'inline label - always visible', 'Estado': 'no label', 'Info': 'no label', });
-lyr_FO_Brown_3.set('fieldLabels', {'Tipo': 'no label', 'Nombre': 'inline label - visible with data', 'Estado': 'no label', 'Info': 'inline label - always visible', });
-lyr_BotellasNaps_Brown_4.set('fieldLabels', {'Tipo': 'no label', 'Estado': 'no label', 'Nomencla': 'inline label - always visible', 'Info': 'no label', 'Clasificac': 'no label', });
+lyr_BotellasNaps_Varela_2.set('fieldLabels', {'Tipo': 'no label', 'Nomencla': 'inline label - visible with data', 'Estado': 'no label', 'Info': 'no label', });
+lyr_FO_Brown_3.set('fieldLabels', {'Tipo': 'no label', 'Nombre': 'inline label - visible with data', 'Estado': 'no label', 'Info': 'inline label - visible with data', });
+lyr_BotellasNaps_Brown_4.set('fieldLabels', {'Tipo': 'no label', 'Estado': 'no label', 'Nomencla': 'inline label - visible with data', 'Info': 'no label', 'Clasificac': 'no label', });
 lyr_BotellasNaps_Brown_4.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });

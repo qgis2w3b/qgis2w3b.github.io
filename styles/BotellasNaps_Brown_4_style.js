@@ -131,8 +131,8 @@ var style_BotellasNaps_Brown_4 = function(feature, resolution){
     var offsetX = 0;
     var offsetY = 0;
     var placement = 'point';
-    if (feature.get("Nomencla") !== null) {
-        labelText = String(feature.get("Nomencla"));
+    if ("" !== null) {
+        labelText = String("");
     }
     
     var style = categories_BotellasNaps_Brown_4(feature, value, size, resolution, labelText,
